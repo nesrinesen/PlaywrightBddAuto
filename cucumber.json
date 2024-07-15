@@ -1,0 +1,31 @@
+{
+    "default": {
+        "tags": "",
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "src/tests/features"
+        ],
+        "retry": 1,
+        "require": [
+            "src/tests/steps/*.ts",
+            "src/hooks/hooks.ts"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "format": [
+            "progress-bar",
+            [
+                "json",
+                "test-results/cucumber-report.json"
+ 
+            ],
+            [
+                "html",
+                "test-results/html-report.html"
+            ]
+        ]
+    }
+}
