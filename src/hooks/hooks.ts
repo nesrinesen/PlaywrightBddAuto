@@ -36,7 +36,7 @@ Before(async function () {
   pageFixture.page = page;
 });
 
-/* After(async function ({ pickle, result }) {
+After(async function ({ pickle, result }) {
   //screenshots
   console.log(result?.status);
   if (result?.status == Status.PASSED) {
@@ -53,4 +53,4 @@ Before(async function () {
 AfterAll(async function () {
   await browser.close();
 }); 
- */
+ 
